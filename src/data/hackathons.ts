@@ -50,8 +50,7 @@ export const hackathons: HackathonEntry[] = [
     date: "Nov 2025",
     location: "Tutor10x / Edflow",
     links: {
-      website: "https://www.linkedin.com/company/tutor10x/",
-      devpost: "https://www.linkedin.com/company/edflowai/"
+      
     }
   },
   {
@@ -67,8 +66,7 @@ export const hackathons: HackathonEntry[] = [
     date: "Dec 2025",
     location: "Sydney",
     links: {
-      website: "https://www.linkedin.com/company/cursorai/",
-      devpost: "https://www.linkedin.com/company/heydovetail/"
+      website: "https://cursorthon.vercel.app/"
     }
   },
   {
@@ -79,7 +77,7 @@ export const hackathons: HackathonEntry[] = [
     description:
       "A remote hackathon entry built around Gemini 3, framed as an online sprint where the focus is the shipped prototype, demo flow, and AI workflow design rather than an in-person event photo.",
     descriptionAlt:
-      "线上 hackathon 可以先用 Gemini 风格封面展示，之后再补 demo 截图、GitHub、提交页或 LinkedIn post 作为证明材料。",
+      "",
     date: "TBD",
     location: "Online",
     links: {
@@ -96,11 +94,28 @@ export const hackathons: HackathonEntry[] = [
     descriptionAlt:
       "No ranking listed yet, so this card highlights the shipped project and demo link instead of an award result.",
     date: "TBD",
-    location: "Online",
+    location: "Sydney",
     links: {
       website: "https://job.a2a.ing/"
     }
-  },
+  },{
+    title: "Mistral AI Global Hackathon",
+    image: "mistral",
+    imageSrc: "/hackathons/MistralAI-image.png",
+    imageAlt: "Mistral AI Global Hackathon team photo",
+    badge: null,
+    award: "48-hour AI build sprint · Team competitor",
+    description:
+      "Honoured to be invited to compete in Mistral AI's Global Hackathon, spending 48 hours building, problem-solving, and competing alongside some of Australia's strongest builders.",
+    descriptionAlt:
+      "From late Saturday pivots to refining features, iterating on agents, and running on four hours of sleep, every moment was worth it. Proud to build with three exceptional engineers, two still looking for their first internships, and I would do it all over again in a heartbeat.",
+    date: "Jun 2026",
+    location: "Sydney",
+    links: {
+      website: "https://kq.a2a.ing/"
+    }
+  }
+  
   
 ];
 

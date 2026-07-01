@@ -10,8 +10,7 @@ export function HeroSection() {
       <MacWindowCard title="Chelsea Profile" contentClassName="hero-window-content">
         <section className="hero-section" aria-labelledby="home-title">
           <div className="hero-copy">
-            <p className="eyebrow">Chelsea.local</p>
-            <h1 id="home-title">Hello, I&apos;m Chelsea</h1>
+            <h1 id="home-title">Hello, I&apos;m Chelsea 👋</h1>
             <p className="hero-subtitle">Builder × Hacker × Designer</p>
           </div>
 
@@ -26,11 +25,6 @@ export function HeroSection() {
               priority
             />
           </div>
-
-          <p className="hero-description">
-            I build precise, human-centered software with a soft spot for playful interfaces,
-            hackathon prototypes, and AI products that make the work feel lighter.
-          </p>
 
           <div className="hero-actions" aria-label="Primary actions">
             <RetroButton href="mailto:hello@example.com" variant="blue">

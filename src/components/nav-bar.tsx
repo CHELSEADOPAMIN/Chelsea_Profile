@@ -76,7 +76,7 @@ export function NavBar() {
         <a
           aria-label="GitHub"
           className="menu-icon-link"
-          href="https://github.com/"
+          href="https://github.com/CHELSEADOPAMIN"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -85,7 +85,7 @@ export function NavBar() {
         <a
           aria-label="LinkedIn"
           className="menu-icon-link"
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/chelsea-yang-21204930b/"
           rel="noopener noreferrer"
           target="_blank"
         >
