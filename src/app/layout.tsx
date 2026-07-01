@@ -28,7 +28,21 @@ export const metadata: Metadata = {
     default: "Chelsea Profile",
     template: "%s | Chelsea Profile"
   },
-  description: "Chelsea's retro Mac personal site, projects, and hackathon archive."
+  description: "Chelsea's retro Mac personal site, projects, and hackathon archive.",
+  icons: {
+    icon: [
+      {
+        url: "/cx-icon.jpg",
+        type: "image/jpeg"
+      }
+    ],
+    apple: [
+      {
+        url: "/cx-icon.jpg",
+        type: "image/jpeg"
+      }
+    ]
+  }
 };
 
 export default function RootLayout({

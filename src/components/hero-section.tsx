@@ -27,7 +27,7 @@ export function HeroSection() {
           </div>
 
           <div className="hero-actions" aria-label="Primary actions">
-            <RetroButton href="mailto:hello@example.com" variant="blue">
+            <RetroButton href="/contact" variant="blue">
               <Mail aria-hidden="true" size={15} />
               Contact
             </RetroButton>

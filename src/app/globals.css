@@ -183,7 +183,8 @@ a {
 .home-shell,
 .projects-page,
 .hackathons-page,
-.resume-page {
+.resume-page,
+.contact-page {
   width: min(100% - 28px, 760px);
   margin: 0 auto;
   padding: 96px 0 56px;
@@ -196,6 +197,10 @@ a {
 
 .resume-page {
   width: min(100% - 28px, 980px);
+}
+
+.contact-page {
+  width: min(100% - 28px, 720px);
 }
 
 .mac-window {
@@ -472,6 +477,169 @@ a {
   min-height: 620px;
   border: 0;
   background: var(--bg-card);
+}
+
+.contact-window-content {
+  background: var(--bg-window);
+}
+
+.contact-panel {
+  display: grid;
+  gap: 0;
+}
+
+.contact-intro {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  border-bottom: 1px solid var(--color-soft-border);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0)),
+    var(--bg-card);
+  padding: 22px;
+}
+
+[data-theme="dark"] .contact-intro {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0)),
+    var(--bg-card);
+}
+
+.contact-stamp {
+  position: relative;
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--color-avatar-bg) 72%, #000000 28%);
+  border-radius: 9px;
+  background: var(--color-avatar-bg);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.48), 0 8px 16px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.contact-stamp::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.32), transparent 44%);
+  content: "";
+  pointer-events: none;
+}
+
+.contact-stamp-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contact-kicker {
+  margin: 0 0 4px;
+  color: var(--color-secondary);
+  font-family: var(--font-mono), Monaco, monospace;
+  font-size: 12px;
+}
+
+.contact-intro h2 {
+  margin: 0;
+  font-family: var(--font-display), Geneva, sans-serif;
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+.contact-intro p {
+  margin: 6px 0 0;
+  color: var(--color-secondary);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.contact-list {
+  display: grid;
+}
+
+.contact-row {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: 38px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid var(--color-soft-border);
+  color: var(--color-primary);
+  padding: 14px 16px;
+}
+
+.contact-row:last-child {
+  border-bottom: 0;
+}
+
+.contact-row-link {
+  transition: background 160ms ease;
+}
+
+.contact-row-link:hover {
+  background: var(--bg-card);
+}
+
+.contact-method-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--color-soft-border);
+  border-radius: 6px;
+  background: var(--bg-card);
+  color: var(--color-accent);
+}
+
+.contact-method-copy {
+  min-width: 0;
+}
+
+.contact-method-copy span,
+.contact-method-copy strong {
+  display: block;
+}
+
+.contact-method-copy span {
+  color: var(--color-secondary);
+  font-size: 12px;
+}
+
+.contact-method-copy strong {
+  overflow-wrap: anywhere;
+  font-family: var(--font-mono), Monaco, monospace;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.contact-action {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #fefefe, #dfdfdf);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  color: #111111;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  padding: 5px 10px;
+  white-space: nowrap;
+}
+
+.contact-action:hover {
+  filter: brightness(0.98);
+}
+
+.contact-open {
+  cursor: pointer;
 }
 
 .project-grid {
@@ -995,7 +1163,8 @@ a {
   .home-shell,
   .projects-page,
   .hackathons-page,
-  .resume-page {
+  .resume-page,
+  .contact-page {
     width: min(100% - 18px, 760px);
     padding-top: 72px;
   }
@@ -1044,6 +1213,23 @@ a {
 
   .project-period {
     width: fit-content;
+  }
+
+  .contact-intro {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 20px 16px;
+    text-align: center;
+  }
+
+  .contact-row {
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .contact-action {
+    grid-column: 2;
+    justify-self: start;
   }
 }
 
