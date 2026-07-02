@@ -11,7 +11,7 @@ export function HeroSection() {
         <section className="hero-section" aria-labelledby="home-title">
           <div className="hero-copy">
             <h1 id="home-title">Hello, I&apos;m Chelsea 👋</h1>
-            <p className="hero-subtitle">Builder × Hacker × Designer</p>
+            <p className="hero-subtitle">Builder × Designer</p>
           </div>
 
           <div className="avatar-stage">
