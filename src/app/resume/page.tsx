@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { MacWindowCard } from "@/components/mac-window-card";
 import { RetroButton } from "@/components/retro-button";
 
-const resumePath = "/ChelseaYang---Resume.pdf";
+const resumePath = "/Chelsea-resume.pdf";
 const resumePreviewPath = `${resumePath}?v=20260629#view=FitH`;
 
 export const metadata: Metadata = {
