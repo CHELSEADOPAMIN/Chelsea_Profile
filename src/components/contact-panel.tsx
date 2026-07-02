@@ -62,9 +62,9 @@ export function ContactPanel() {
           <Image
             alt=""
             className="contact-stamp-image"
-            height={58}
-            src="/cx-icon.jpg"
-            width={58}
+            height={120}
+            src="/chelsea-profile.jpg"
+            width={120}
           />
         </div>
         <div>
