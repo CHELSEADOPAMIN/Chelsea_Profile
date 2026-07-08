@@ -14,6 +14,24 @@ export type ProjectEntry = {
 
 export const projects: ProjectEntry[] = [
   {
+    title: "Splendor Online",
+    period: "Jul 2026",
+    role: "Creator",
+    type: "Web Board Game",
+    tone: "gold",
+    summary:
+      "A browser-based remake of the board game Splendor. This is an early first version, with more features and polish planned in future updates.",
+    highlights: [
+      "Implemented the core Splendor rules: gem tokens, card development, and noble tiles.",
+      "Built the full game loop playable directly in the browser with no install.",
+      "Actively iterating - upcoming versions will add smarter opponents and better UX."
+    ],
+    stack: ["React", "Vite", "TypeScript", "Vercel"],
+    links: {
+      website: "https://splendorrrrr.vercel.app/"
+    }
+  },
+  {
     title: "Codex Pets Generator",
     period: "Jun 2026",
     role: "Creator",
